@@ -1,0 +1,1 @@
+{"ds": "fashion_mnist", "n": 10, "depth": 8, "ent": 1.0, "bw": 0.15, "key": "fashion_mnist_n10_d8_e1p0_bw0p15", "hp": [[2, 16], [2, 64], [4, 16], [4, 64]]}

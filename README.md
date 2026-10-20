@@ -46,8 +46,9 @@ The result files use short arm codes:
 | Experiment 3 | `notebooks/synthetic/phase_c2v3_FULL_fastboot.ipynb` | `runs/phase_c2v3_full_v1/` |
 | Experiment 4 (redundancy doses) | `notebooks/synthetic/phase_dv3_FULL.ipynb` | `runs/phase_dv3_full_v1/` |
 | Table 4 (two-qubit gates) | `notebooks/shots/gate4_g1rerunv3_FULL.ipynb` | `runs/gate4_g1rerunv3/` |
-| Section 5.3 (real data, n = 8–20) | `notebooks/real/t11*_FULL.ipynb`; n = 20 on Modal with `scripts/modal_n20/` | `runs/t11_v3/` |
-| Selection inputs measured with finitely many shots | `scripts/noisy_selection/` | `runs/noisy_selection_v1/results.json` |
+| Section 5.3 (real data, n = 8–20) | `notebooks/real/t11*_FULL.ipynb`; n = 20: `notebooks/real/d1off_t11*bign20v3_FULL.ipynb` (the notebooks that ran, with the secondary Huang et al. diagnostics switched off), launched on Modal with `scripts/modal_n20/` | `runs/t11_v3/` |
+| Section 2.4 (share of the mean on real data) | `scripts/mean_share_real/measure_dc_and_topvar.py` | `runs/mean_share_real/dc_offset_and_topvar.json` |
+| Selection inputs measured with finitely many shots | `scripts/noisy_selection/` | `runs/noisy_selection_v1/` (`raw/`: per-unit accuracies, `units/`: unit definitions, `results.json`) |
 | Strict-gold counts, label-free vs. label-aware sets, doses | `scripts/selection_bias/` | `runs/selection_bias_check_v1/` |
 
 The synthetic and real-data notebooks ran on GPUs (Google Colab T4/L4/A100, Modal A100) with CuPy; they fall back to NumPy without a GPU but are slow at n ≥ 12. They write their results to Google Drive when run on Colab and to the working directory otherwise.
@@ -81,10 +82,14 @@ cd runs && python ../scripts/selection_bias/syn52.py      # Section 5.2: top-cap
 cd .. && python scripts/selection_bias/d23.py               # Section 4.4: doses
 ```
 
-The noisy-selection scripts load the core library from `$HOPE_ROOT/src`; set `HOPE_ROOT` to the repository root.
+The noisy-selection scripts load the core library from `$HOPE_ROOT/src`; set `HOPE_ROOT` to the repository root. The interval of the 5.08× saving (Section 5.3) is reproduced by
+
+```bash
+HOPE_ROOT=. python scripts/noisy_selection/nsel_analyze.py runs/noisy_selection_v1/raw runs/t11_v3
+```
 
 ## Notes
 
 - Code comments and some notebook text are in Turkish. Variable names and result fields are in English.
 - Shot counts of the full kernel are per kernel entry (overlap test); those of the selected kernels are per input (classical shadows), see Sections 3.1 and 5.
-- Large intermediate files (checkpoints, cached kernels) are not included; every reported number is computed from the files in `runs/`.
+- Large intermediate files (checkpoints, cached kernels) are not included; every reported number is computed from the files in `runs/`, with one exception: the bound of 0.09 points between the two GPU platforms of the n = 20 runs (Section 5.1) comes from a consistency check whose second computation was not kept.
