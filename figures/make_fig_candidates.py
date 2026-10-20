@@ -213,7 +213,7 @@ fig.tight_layout(rect=(0, 0.08, 1, 1)); save(fig, "cand_budget_sweep")
 
 # C10: boxplots per dataset and number of qubits, every row, split by whether the full kernel concentrates
 NC = {"breast_cancer": (8, 10, 12), "fashion_mnist": (8, 10, 12, 16, 20), "ionosphere": (8, 10, 12, 16, 20)}
-fig, axes = plt.subplots(3, 5, figsize=(7.0, 6.6), sharey=True)
+fig, axes = plt.subplots(3, 5, figsize=(7.0, 8.4), sharey=True)
 for ax in axes[0, 3:]: ax.set_visible(False)           # breast cancer runs only up to n = 12
 out["c10"] = {}
 BX = [("A0", "full"), ("A1_random", "random"), ("A2_hbody", "H-body"), ("A3_topp", "top-cap."),
