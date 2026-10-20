@@ -1,0 +1,21 @@
+{
+ "test_points": 106,
+ "inputs_max_abs_diff": 0.0,
+ "selection_profiles_max_abs_diff": 0.0,
+ "noise_free": {
+  "entries": 19,
+  "different": 3,
+  "whole_test_points": true,
+  "max_abs_diff_points": 1.8867924528301927,
+  "effect_on_30_split_mean": 0.06289308176100643
+ },
+ "finite_shots": {
+  "entries": 114,
+  "different": 24,
+  "whole_test_points": true,
+  "max_abs_diff_points": 8.490566037735846,
+  "effect_on_30_split_mean": 0.2830188679245282
+ },
+ "full_kernel_max_abs_diff": 0.0,
+ "note": "Shot noise is drawn with the same seeded NumPy generator on both sides; the larger differences at finite shots come from float32 (GPU) versus float64 (CPU) arithmetic in the noisy kernels."
+}
