@@ -12,7 +12,7 @@ Every number, figure and table in the paper is reproduced from the result files 
 
 | Path | Contents |
 |---|---|
-| `src/` | Core library: encoding, Pauli expectation values, kernels, diagnosis (`qk_core.py`); selection rules and synthetic labels (`phaseb_core.py`); real-data pipeline (`t11_core.py`); shot model (`gate4_core.py`). |
+| `src/` | Core library: encoding, Pauli expectation values, kernels, diagnosis (`qk_core.py`); selection rules and synthetic labels (`phaseb_core.py`); real-data pipeline (`t11_core.py`); shot model (`gate4_core.py`); closed form of the weight-1 and weight-2 expectation values at depth 1 (`depth1_core.py`, Section 6); check of the statevector simulator against PennyLane `default.qubit` (`pennylane_esdegerlik.py`, needs PennyLane). |
 | `notebooks/` | The self-contained notebooks that produced the results (each embeds its own copy of the core code). |
 | `scripts/` | Noisy-selection experiment, strict-gold counts and dose analysis, Modal launcher for the n = 20 real-data runs. |
 | `runs/` | Result files (JSON/CSV) of every run used in the paper. |
