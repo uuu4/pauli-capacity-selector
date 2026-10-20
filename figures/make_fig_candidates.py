@@ -1,6 +1,6 @@
 """Candidate figures (to be filtered): real data, selection cost, synthetic survival.
 
-Data (latifakgun/hope-research):
+Data (this repository):
   argv[1]: runs/v3-modal-l4-2026-10-16/ (t11v3, t11fmv3, t11iobign16v3, t11fmbign16v3 *_FULL_results.json)
   argv[2]: runs/noisy_selection_v1/results.json
   argv[3]: runs/ folder holding phase_{b,c,c2,d}v3_full_v1/*_FULL_results.json (synthetic)

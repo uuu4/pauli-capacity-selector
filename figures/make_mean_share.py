@@ -5,7 +5,7 @@ full fidelity kernel, and sum_i gamma_i = 1 with gamma_I = 2^-n. Over the non-co
 share of the mean is therefore (mean off-diagonal k - 2^-n) / (1 - 2^-n). Checked against the
 term-by-term sum (check_capacity_mean.py) at n = 4 and 6 to machine precision.
 
-Data: latifakgun/hope-research@91388cf, runs/phase_a2ext_v1/series_by_n.json (key fid)
+Data: runs/phase_a2ext_v1/series_by_n.json (key fid)
 (REF: ZZ map, depth 8, ent 1.0, bandwidth 0.3; M = 400 / 250 / 200 points).
 Usage: python make_mean_share.py /path/to/hope-research
 """

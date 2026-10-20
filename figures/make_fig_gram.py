@@ -4,7 +4,7 @@ Fidelity kernel k(x,x') = |<psi(x)|psi(x')>|^2 of the ZZ feature map at the refe
 setting (depth 8, eps = 1, bandwidth 0.3), exact statevector, for n = 4, 8, 12, 16.
 30 inputs drawn around three random centers (10 each, Gaussian spread 0.1 per coordinate),
 ordered by center, so similar inputs form diagonal blocks.
-Encoder: latifakgun/hope-research src/qk_core.py (encode), loaded from the path given as argv[1].
+Encoder: src/qk_core.py (encode), loaded from the path given as argv[1].
 Usage: python make_fig_gram.py /path/to/hope-research
 """
 import os, sys

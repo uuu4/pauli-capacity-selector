@@ -9,7 +9,7 @@ only a few distinct n. This script recomputes every Table 1 slope with
 and reports, for the variance column, whether the "whole interval below zero" condition
 of the exponential call agrees across the three.
 
-Data: latifakgun/hope-research@91388cf, runs/phase_a2ext_v1/series_by_n.json (keys fid, H2, H3, H4)
+Data: runs/phase_a2ext_v1/series_by_n.json (keys fid, H2, H3, H4)
 (REF: ZZ map, depth 8, ent 1.0, bandwidth 0.3). Variance fits use n = 4..20, shot fits n = 8..20,
 as in the main text.
 Usage: python make_slope_ci.py /path/to/hope-research

@@ -4,7 +4,7 @@ ZZ feature map at depth 8, eps = 1, bandwidth 0.3, n = 12, exact statevector (as
 Gram matrices on 30 inputs drawn around three random centers (10 each, Gaussian spread 0.1), ordered by center.
 Capacities of all 630 non-constant Pauli terms of weight <= 2 on 400 unlabeled inputs drawn uniformly;
 the 16 terms of largest capacity build the selected kernel (Eq. kS).
-Encoder and Pauli expectation values: latifakgun/hope-research src/qk_core.py (encode, pool_layout,
+Encoder and Pauli expectation values: src/qk_core.py (encode, pool_layout,
 pauli_expect_fast), loaded from the path given as argv[1].
 Usage: python make_fig_schematic.py /path/to/hope-research
 Writes fig_schematic.pdf/.png and fig_schematic_data.json.

@@ -1,6 +1,6 @@
 """Figures and table values for Section 5.3 (real data).
 
-Data (latifakgun/hope-research):
+Data (this repository):
   argv[1]: runs/v3-modal-l4-2026-10-16/ with t11v3, t11fmv3, t11iobign16v3, t11fmbign16v3 *_FULL_results.json
            (rows as written by notebooks/build_t11_nb.py); t11iobign20v3 / t11fmbign20v3 are used if present.
   argv[2]: runs/noisy_selection_v1/results.json (selection inputs measured with S_sel shots per input).

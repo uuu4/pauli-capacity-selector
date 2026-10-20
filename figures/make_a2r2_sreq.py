@@ -1,6 +1,6 @@
 """Ratio-criterion series for the encoding with n-independent phase spread -> a2r2_sreq_slopes.json.
 
-Data: latifakgun/hope-research @ da008b5, runs/phase_a2_v1/fig1_series_ref.csv, rows phase == phase_a2r2
+Data: runs/phase_a2_v1/fig1_series_ref.csv, rows phase == phase_a2r2
 (norm 'sqrt', bandwidth 1.0, depth 8, ent 1.0). Fit: qk_core.layer_b on n >= 8, the same range
 convention as the main-text shot fits (sreq_slopes.json). With n >= 4 the slopes reproduce
 fig1_slopes_ref.json exactly (full 0.6759, w<=2 0.0427, w<=3 0.0210).

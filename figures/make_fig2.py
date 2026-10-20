@@ -2,7 +2,7 @@
 
 (a) Full kernel under the encoding with n-independent phase spread (norm='sqrt'), depth 8, epsilon 1:
     factor by which the kernel variance is divided with every added qubit, exp(-slope), against the bandwidth c.
-    Data: latifakgun/hope-research @ 7a6a3cb, runs/phase_a2r2_v1/results.json -> A0_slopes_by_bw.
+    Data: runs/phase_a2r2_v1/results.json -> A0_slopes_by_bw.
 (b) Per-qubit factors of the variance (divided) and of the required shots (multiplied), for the full kernel
     and the Lego kernels of weight <= 2, 3, under the original encoding (bandwidth 0.3, Section 3; variance
     slopes as in make_fig1.py, shots from sreq_slopes.json) and the n-independent encoding (bandwidth 1.0;

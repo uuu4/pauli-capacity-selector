@@ -1,6 +1,6 @@
 """Slopes of ln S_req vs n for Figure 1(b) and Table 1 -> sreq_slopes.json.
 
-Data: latifakgun/hope-research@91388cf, runs/phase_a2ext_v1/phase_a2_results.json
+Data: runs/phase_a2ext_v1/phase_a2_results.json
 (REF: ZZ map, depth 8, ent 1.0, bandwidth 0.3; n = 8..20 for all four series).
 Full kernel: regions[arm == A0_fidelity].s_req; truncated: gold[H].g_s_req.
 Fit: qk_core.layer_b (2000 bootstrap resamples of the n values, seed 0, AIC vs ln n).

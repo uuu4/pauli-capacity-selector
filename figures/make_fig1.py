@@ -1,7 +1,7 @@
 """Figure 1 (Section 3.2-3.3): the two diagnostic criteria at the reference setting.
 
 (a) Per-qubit decay rate of the kernel variance, d ln Var[k]/dn, 95% bootstrap CI.
-    Data: latifakgun/hope-research @ 7a6a3cb, runs/phase_a2_v1/results.json
+    Data: runs/phase_a2_v1/results.json
     -> slopes_fid ("depth|ent"), full kernel n = 4..20. Truncated (Lego) rows:
     runs/phase_a2ext_v1/phase_a2_results.json -> slopes_ser[H]["8|1.0|0.0"], n = 4..20
     (extension run, 2026-10-16; full-kernel values reproduce phase_a2_v1 to 5e-7).
