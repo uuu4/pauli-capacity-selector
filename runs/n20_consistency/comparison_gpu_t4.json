@@ -1,0 +1,73 @@
+{
+ "test_points": 106,
+ "inputs_max_abs_diff": 0.0,
+ "selection_profiles_max_abs_diff": 0.0,
+ "noise_free": {
+  "entries": 19,
+  "different": 3,
+  "whole_test_points": true,
+  "max_abs_diff_points": 1.8867924528301927,
+  "effect_on_30_split_mean": 0.06289308176100643
+ },
+ "finite_shots": {
+  "entries": 114,
+  "different": 28,
+  "whole_test_points": true,
+  "max_abs_diff_points": 8.490566037735846,
+  "effect_on_30_split_mean": 0.2830188679245282
+ },
+ "full_kernel_max_abs_diff": 0.0,
+ "per_rule": {
+  "A0": {
+   "noise_free_max": 0.0,
+   "finite_max": 0.0,
+   "effect_on_30_split_mean": 0.0
+  },
+  "A1_random": {
+   "noise_free_max": 0.9433962264151035,
+   "finite_max": 5.660377358490564,
+   "effect_on_30_split_mean": 0.1886792452830188
+  },
+  "A2_hb1": {
+   "noise_free_max": 0.0,
+   "finite_max": 0.9433962264150892,
+   "effect_on_30_split_mean": 0.03144654088050298
+  },
+  "A2_hb2": {
+   "noise_free_max": 0.0,
+   "finite_max": 2.830188679245282,
+   "effect_on_30_split_mean": 0.0943396226415094
+  },
+  "A2_low": {
+   "noise_free_max": 1.8867924528301927,
+   "finite_max": 2.830188679245282,
+   "effect_on_30_split_mean": 0.0943396226415094
+  },
+  "A3_topp": {
+   "noise_free_max": 0.0,
+   "finite_max": 0.9433962264150964,
+   "effect_on_30_split_mean": 0.031446540880503214
+  },
+  "A4_merge": {
+   "noise_free_max": 1.8867924528301927,
+   "finite_max": 8.490566037735846,
+   "effect_on_30_split_mean": 0.2830188679245282
+  },
+  "A5_super": {
+   "noise_free_max": 0.0,
+   "finite_max": 1.8867924528301927,
+   "effect_on_30_split_mean": 0.06289308176100643
+  },
+  "A7_resid": {
+   "noise_free_max": 0.0,
+   "finite_max": 1.8867924528301927,
+   "effect_on_30_split_mean": 0.06289308176100643
+  },
+  "A8_cost": {
+   "noise_free_max": 0.0,
+   "finite_max": 0.9433962264150892,
+   "effect_on_30_split_mean": 0.03144654088050298
+  }
+ },
+ "note": "Shot noise is drawn with the same seeded NumPy generator on both sides."
+}

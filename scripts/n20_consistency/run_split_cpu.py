@@ -1,4 +1,4 @@
-"""Recompute one n = 20 split on CPU (float64) with the code of the notebook that produced it.
+"""Recompute one n = 20 split with the code of the notebook that produced it (GPU with CuPy if available, else CPU in float64).
 
 Unit: ionosphere, n = 20, depth 8, eps = 1, bandwidth 0.15, split 0 (about 75 min on one CPU core, ~3 GB RAM).
 Usage: python run_split_cpu.py notebooks/real/d1off_t11iobign20v3_FULL.ipynb <empty work dir>

@@ -1,10 +1,9 @@
-"""Compare a split recomputed on CPU (float64) with the stored GPU checkpoint (float32) of the same split.
+"""Compare a recomputed n = 20 split with the stored GPU checkpoint of the same split.
 
 Section 5.1 states that where two GPU platforms computed the same n = 20 splits, inputs and selected
 terms agree and accuracies differ only through ties in single precision. The second GPU computation of
-that check was not kept; this script repeats the check against an independent CPU recomputation.
-Usage: python compare_split.py runs/n20_consistency/gpu_*.pkl runs/n20_consistency/cpu_*.pkl
-Writes runs/n20_consistency/comparison.json.
+the original check was not kept; this script compares the stored split with a recomputation.
+Usage: python compare_split.py STORED.pkl RECOMPUTED.pkl OUT.json
 """
 import json, os, pickle, sys
 import numpy as np
@@ -29,7 +28,15 @@ for name, sel in (('noise_free', lambda k: k.endswith('|inf')), ('finite_shots',
                      max_abs_diff_points=float(np.abs(d).max()),
                      effect_on_30_split_mean=float(np.abs(d).max() / 30))
 out['full_kernel_max_abs_diff'] = max(abs(v) for k, v in rows if k.split('|')[2] == 'A0')
-out['note'] = ('Shot noise is drawn with the same seeded NumPy generator on both sides; the larger differences at '
-               'finite shots come from float32 (GPU) versus float64 (CPU) arithmetic in the noisy kernels.')
-json.dump(out, open(os.path.join(os.path.dirname(sys.argv[1]), 'comparison.json'), 'w'), indent=1)
+per_arm = {}
+for k, v in rows:
+    arm, S = k.split('|')[2], k.split('|')[3]
+    e = per_arm.setdefault(arm, dict(noise_free_max=0.0, finite_max=0.0))
+    key = 'noise_free_max' if S == 'inf' else 'finite_max'
+    e[key] = max(e[key], abs(v))
+for e in per_arm.values():
+    e['effect_on_30_split_mean'] = max(e['noise_free_max'], e['finite_max']) / 30
+out['per_rule'] = per_arm
+out['note'] = 'Shot noise is drawn with the same seeded NumPy generator on both sides.'
+json.dump(out, open(sys.argv[3], 'w'), indent=1)
 print(json.dumps(out, indent=1))
