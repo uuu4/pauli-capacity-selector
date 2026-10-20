@@ -1,0 +1,9 @@
+# Figures and numbers (checked with Python 3.14, numpy 2.5, matplotlib 3.11)
+numpy>=1.26
+matplotlib>=3.8
+# Experiment notebooks (run with numpy 1.26, scipy 1.13, scikit-learn 1.6.1)
+scipy>=1.13
+scikit-learn>=1.6
+# Optional: GPU (CUDA 12) for the notebooks, Modal for the n = 20 launcher
+# cupy-cuda12x
+# modal

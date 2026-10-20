@@ -1,0 +1,10 @@
+wnorm dahil (syn52): 15 satir, 5 birim
+  A3_topp-A2_hbody: medyan +3.07 [+0.54,+4.74]  pozitif 15/15
+  A7_resid-A2_hbody: medyan +3.31 [+0.74,+4.13]  pozitif 15/15
+  A3_topp-A1_random: medyan +4.33 [+4.18,+4.66]  pozitif 15/15
+  A7_resid-A3_topp: medyan +0.20 [-0.62,+0.28]  pozitif 12/15
+wnorm haric: 15 satir, 5 birim
+  A3_topp-A2_hbody: medyan +3.07 [+0.54,+4.74]  pozitif 15/15
+  A7_resid-A2_hbody: medyan +3.31 [+0.74,+4.13]  pozitif 15/15
+  A3_topp-A1_random: medyan +4.33 [+4.18,+4.66]  pozitif 15/15
+  A7_resid-A3_topp: medyan +0.20 [-0.62,+0.28]  pozitif 12/15

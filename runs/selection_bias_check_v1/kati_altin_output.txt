@@ -1,0 +1,40 @@
+=== B: satir 1584, hucre(n,d,e,bw) 22, bw [0.3], etiket ['lin3', 'parity3', 'qglobal', 'qlocal', 'quad3', 'trig3']
+  birincil (kati altin, qlocal haric): 15 satir, 5 birim, etiketler {'quad3': 15}
+  A3_topp-A2_hbody: medyan +3.07 [+0.54,+4.74]  pozitif 15/15
+  A7_resid-A2_hbody: medyan +3.31 [+0.74,+4.13]  pozitif 15/15
+  A3_topp-A1_random: medyan +4.33 [+4.18,+4.66]  pozitif 15/15
+  A7_resid-A1_random: medyan +4.47 [+4.42,+4.94]  pozitif 15/15
+  A7_resid-A3_topp: medyan +0.20 [-0.62,+0.28]  pozitif 12/15
+  A3_topp-A0: medyan +2.78 [+2.31,+4.65]  pozitif 15/15
+  A7_resid-A0: medyan +3.02 [+2.51,+4.04]  pozitif 15/15
+  mutlak medyan dogruluk: {'A0': 52.0, 'A1_random': 50.4, 'A2_hbody': 51.9, 'A3_topp': 54.9, 'A7_resid': 55.0, 'A5_super': 58.4}
+=== C: satir 864, hucre(n,d,e,bw) 18, bw [0.2, 0.3, 0.6], etiket ['lin3', 'parity3', 'qlocal', 'quad3']
+  birincil (kati altin, qlocal haric): 25 satir, 6 birim, etiketler {'quad3': 21, 'lin3': 4}
+  A3_topp-A2_hbody: medyan +3.42 [+1.55,+3.78]  pozitif 21/25
+  A7_resid-A2_hbody: medyan +3.19 [+1.23,+4.26]  pozitif 21/25
+  A3_topp-A1_random: medyan +4.69 [+3.57,+5.07]  pozitif 25/25
+  A7_resid-A1_random: medyan +4.69 [+3.64,+5.50]  pozitif 25/25
+  A7_resid-A3_topp: medyan +0.12 [-0.32,+0.68]  pozitif 15/25
+  A3_topp-A0: medyan +3.37 [+3.13,+3.71]  pozitif 25/25
+  A7_resid-A0: medyan +3.60 [+2.80,+4.01]  pozitif 25/25
+  mutlak medyan dogruluk: {'A0': 52.2, 'A1_random': 50.4, 'A2_hbody': 52.6, 'A3_topp': 55.3, 'A7_resid': 55.6, 'A5_super': 57.7}
+=== C2: satir 720, hucre(n,d,e,bw) 20, bw [0.15, 0.25, 0.35], etiket ['lin3', 'parity3', 'qlocal', 'quad3']
+  birincil (kati altin, qlocal haric): 57 satir, 9 birim, etiketler {'quad3': 48, 'lin3': 9}
+  A3_topp-A2_hbody: medyan +3.46 [+1.36,+3.87]  pozitif 51/57
+  A7_resid-A2_hbody: medyan +3.42 [+1.44,+3.98]  pozitif 51/57
+  A3_topp-A1_random: medyan +5.06 [+4.13,+5.30]  pozitif 57/57
+  A7_resid-A1_random: medyan +5.03 [+4.43,+5.41]  pozitif 57/57
+  A7_resid-A3_topp: medyan +0.13 [-0.07,+0.20]  pozitif 30/57
+  A3_topp-A0: medyan +4.09 [+3.10,+4.55]  pozitif 57/57
+  A7_resid-A0: medyan +4.07 [+3.08,+4.68]  pozitif 57/57
+  mutlak medyan dogruluk: {'A0': 52.0, 'A1_random': 50.7, 'A2_hbody': 53.1, 'A3_topp': 55.6, 'A7_resid': 55.8, 'A5_super': 57.8}
+=== D: satir 864, hucre(n,d,e,bw) 6, bw [0.25, 0.35], etiket ['lin3', 'parity3', 'qlocal', 'quad3']
+  birincil (kati altin, qlocal haric): 58 satir, 11 birim, etiketler {'quad3': 58}
+  A3_topp-A2_hbody: medyan +2.93 [+2.41,+3.73]  pozitif 58/58
+  A7_resid-A2_hbody: medyan +3.19 [+2.76,+3.72]  pozitif 58/58
+  A3_topp-A1_random: medyan +4.01 [+3.09,+4.76]  pozitif 58/58
+  A7_resid-A1_random: medyan +4.33 [+4.14,+5.02]  pozitif 58/58
+  A7_resid-A3_topp: medyan +0.20 [-0.10,+0.44]  pozitif 42/58
+  A3_topp-A0: medyan +3.64 [+3.17,+4.38]  pozitif 58/58
+  A7_resid-A0: medyan +4.03 [+3.34,+4.33]  pozitif 55/58
+  mutlak medyan dogruluk: {'A0': 51.7, 'A1_random': 50.5, 'A2_hbody': 52.3, 'A3_topp': 55.1, 'A7_resid': 55.4, 'A5_super': 56.6}
